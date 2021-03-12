@@ -1,0 +1,448 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor:url(../assets/images/cursor.png), auto;
+    font-family: monospace;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  
+.player{
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 19;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    background-size: 100% 100%;
+    overflow: visible;
+    cursor:url(../assets/images/sword.png), auto;
+}
+
+
+body{
+    background-image: url(../assets/images/tile.png);
+}
+
+.playground{
+    height: 500px;
+    width: 100%;
+}
+
+.enemy{
+    height: 10px;
+    overflow: hidden;
+}
+
+.myself{
+    background-color: white;
+    z-index: 20;
+    cursor: url(../assets/images/shield.png), auto;
+}
+
+.me{
+    height: 100vh;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.al-box{
+    background-color: rgba(0, 0, 0, 0.171);
+    position: absolute;
+    top: -20px;
+    padding: 3px 5px;
+}
+
+.al-label{
+    font-size: 10px;
+    white-space: nowrap;
+    font-family: monospace;
+    color: wheat;
+    word-break: keep-all;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.heart-pop{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 21;
+    display: none;
+}
+
+#m-pop{
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+    position: fixed;
+    top: calc(50vh - 24px);
+    left: calc(50% - 50px);
+}
+
+:root {
+    --inner: cornflowerblue;
+    --border: black;
+    --accent: white;
+}
+.topbar{
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #707070;
+    padding: 8px 18px;
+    color: white;
+    outline: 2px solid black;
+    text-shadow: 3px 3px #4C4C4C;
+    border-bottom: 4px solid #565656;
+    border-right: 2px solid #565656;
+    border-left: 2px solid #AAA;
+    border-top: 2px solid #AAA;
+    max-height: 50px;
+}
+
+.mc-sh{
+    background-color: #707070;
+    color: white;
+    outline: 2px solid black;
+    text-shadow: 3px 3px #4C4C4C;
+    border-bottom: 4px solid #565656;
+    border-right: 2px solid #565656;
+    border-left: 2px solid #AAA;
+    border-top: 2px solid #AAA;
+}
+
+.score-box{
+    display: flex;
+    margin-right: 10px;
+}
+
+.right-button{
+    right: 80px;
+    left: auto;
+}
+
+.pix-heart, .player-icon, .kill-icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-image: url(../assets/images/pixelheart.webp);
+    background-size: 100% 100%;
+    font-size:  18px;
+}
+
+.player-icon{
+    background-image: url(../assets/images/slime.png);
+    margin-left: 10px;
+}
+
+.score-l, .player-l, .kill-l, .quit-l{
+    font-family: monospace;
+    color: white;
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.player-box{
+    display: flex;
+}
+
+.quit-btn{
+    background-image: url(../assets/images/coal.png);
+}
+
+.settings-button{
+    right: 20px;
+    left: auto;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.settings-btn{
+    background-image: url(../assets/images/compas.gif);
+    height: 25px;
+    width: 25px;
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+.kill-box{
+    display: flex;
+}
+
+.kill-icon{
+    background-image: url(../assets/images/sword.png);
+    margin: 0 10px;
+}
+
+.spectating{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: calc(50vh - 25px);
+    z-index: 99;
+    left: calc(50% - 25px);
+    backdrop-filter: blur(5px);
+    background-image: url(../assets/images/compas.gif);
+    background-size: 100% 100%;
+    border-radius: 50px;
+}
+
+.intro{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-inner{
+    width: 300px;
+    background-image: attr(data-src url); 
+}
+
+.game-inner header{
+    padding: 25px; 
+    text-align: center;
+    width: 100%;
+}
+
+.intro-head h1{
+    margin-bottom: 5px;
+}
+
+.intro-head h6{
+    font-size: 10px;
+    text-shadow: none;
+    color: lightgrey;
+}
+
+.intro main{
+    width: 100%;
+}
+
+.mc-input{
+    padding: 5px 8px;
+    outline: 2px solid black;
+    background-color: transparent;
+    margin: 0 auto;
+    display: block;
+    box-shadow: none;
+    width: 250px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(245, 245, 245, 0.336);
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(245, 245, 245, 0.336);
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(245, 245, 245, 0.336);
+}
+
+.intro footer{
+    padding: 25PX;
+}
+.mc-button{
+    padding: 5px;
+    margin-bottom: 10px;
+    text-shadow: none;
+    display: flex;
+}
+
+.mc-button div{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.btn-icon{
+    height: 20px;
+    margin-right: 6px;
+}
+
+.message-lay{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-image: url(../assets/images/tile.png);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-inner h6{
+    color: white;
+    max-width: 620px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.return-button{
+    padding: 5px 8px;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.return-button h1{
+    font-size: 15px;
+}
+
+.player-list, .how-to-play{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(245, 222, 179, 0.349);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.player-inner{
+    padding: 20px;
+    width: 300px;
+}
+
+.player-inner header{
+    margin-bottom: 10px;
+    font-display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.player-inner h2{
+    display: inline-block;
+}
+
+.player-name{
+    font-size: 15px;
+    color: wheat;
+}
+
+.player-item{
+    text-shadow: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-stat{
+    display: flex;
+}
+
+.player-item h6{
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+.player-item h6:nth-child(1){
+    color: lightgrey;
+}
+.player-item h6:nth-child(2){
+    color: dodgerblue;
+}
+
+.player-quit{
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.player-quit h6{
+    font-size: 15px;
+    text-align: center;
+}
+
+.logs{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.logs h4{
+    color: white;
+    padding: 0 2px;
+    background-color: rgba(0, 0, 0, 0.336);
+    display: inline-flex;
+}
+
+.how-intro{
+    width: 300px;
+    padding: 20px;
+}
+
+.how-intro header{
+    margin-bottom: 10px;
+}
+
+.how-intro main{
+    margin-bottom: 20px;
+    text-shadow: none;
+}
+
+.section-div{
+    margin-bottom: 10px;
+}
+
+.section-div h2{
+    color: wheat;
+}
+
+.section-div p{
+    color: lightgrey;
+    font-size: 12px;
+}
+
+.code-box{
+    background-color: rgba(0, 0, 0, 0.459);
+    margin: 1px;
+}
+
+a{
+    color: dodgerblue;
+}
+.profile-img{
+    width: 40px;
+    margin: 0 auto;
+    height: 40px;
+    margin-bottom: 10px;
+    background-size: 100% 100%;
+    background-image: url(../assets/images/blank.png);
+}

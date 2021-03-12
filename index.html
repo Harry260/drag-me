@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Primary Meta Tags -->
+    <title>Drag Me - Play For free!</title>
+    <meta name="title" content="Drag Me - Play For free!">
+    <meta name="description" content="DragMe is a free open map game where players fight each other and enjoy. Create your custom room now!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Drag Me - Play For free!">
+    <meta property="og:description" content="DragMe is a free open map game where players fight each other and enjoy. Create your custom room now!">
+    <meta property="og:image" content="assets/images/favicon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Drag Me - Play For free!">
+    <meta property="twitter:description" content="DragMe is a free open map game where players fight each other and enjoy. Create your custom room now!">
+    <meta property="twitter:image" content="assets/images/favicon.png">
+
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png"/>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body class="unselectable">
+
+        <div class="intro">
+            <div class="game-inner mc-sh">
+                <header class="intro-head">
+                    <h1>DragMe</h1>
+                    <h6>DragMe is a simple open-map pixelated game to fight each other with friends.</h6>
+                </header>
+                <main>
+                    <div class="mc-sh profile-img"></div>
+                    <input type="text" placeholder="Your Alias" class="mc-input" id="alias-in">
+                    <input type="text" placeholder="Create or Join Battlefield" class="mc-input" id="code-in">
+                </main>
+                <footer> 
+                    <div class="mc-sh mc-button join-ground">
+                        <img class="btn-icon" src="assets/images/nether.webp" alt="">
+                        <div>Join ground</div>
+                    </div>
+                    <div class="mc-sh mc-button create-ground">
+                        <img class="btn-icon" src="assets/images/table.png" alt="">
+                        <div>Create ground</div>
+                    </div>
+                    <div class="mc-sh mc-button spec-ground">
+                        <img class="btn-icon" src="assets/images/compas.gif" alt="">
+                        <div>Spectate ground</div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        
+        <div class="message-lay">
+            <div class="message-inner">
+                <h6 class="msg-txt"></h6>
+                <div class="mc-sh return-button">
+                    <h1>Go back!</h1>
+                </div>
+            </div>
+        </div>
+
+        <input style="display: none;" type="file" id="dp-up">
+
+        <div class="how-to-play">
+            <div class="how-intro mc-sh">
+                <header>
+                    <h1>How to play</h1>
+                </header>
+                <main>
+                    <div class="section-div">
+                        <h2>Game</h2>
+                        <p>The main objective of the game is to kill others and gain XP. The last man standing will become the winer of the game. 
+                            Anone can create their custom room and let others join it. If a player was killed, he can spectate the game. Also snyone can
+                            spectate game with the game code
+                        </p>
+                    </div>
+                    <div class="section-div">
+                        <h2>XP</h2>
+                        <p>The XP is decreased when you are hit by someone and the will gain the xp you lost. The maximum Xp a player can gain is 100.
+                            And the minimum xp needed to survive the game is 10.
+                        </p>
+                    </div>
+                    <div class="section-div">
+                        <h2>Terms of Game</h2>
+                        <p>If you die, you will be rickrolled.. and you should accept it and see it full. Secondly, The owner of the ground can remove anyone
+                            without giving any information.
+                        </p>
+                    </div>
+                    <div class="section-div">
+                        <h2>Controls</h2>
+                        <p>
+                           <span class="code-box">Right Click</span> on enemy - Attack<br>
+                           <span class="code-box">Drag</span> Move Yourself
+                        </p>
+                    </div>
+                    <div class="section-div">
+                        <h2>Made With Love,</h2>
+                        <a href="https://harry260.github.io" target="_blank">By Harry Tom</a>
+                    </div>
+                </main>
+                <footer>
+                    <div class="mc-sh return-button" onclick="$('.how-to-play').fadeOut();">
+                        <h6>Close</h6>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="topbar" style="width: 50px;padding: 10px;"onclick="$('.how-to-play').fadeIn().css('display', 'flex');">
+            <div class="score-box">
+                <div style="margin: 0;background-image: url(assets/images/qmark.png);" class="pix-hearts settings-btn"></div>
+            </div>
+        </div>
+    <audio src="assets/sounds/bgm.mp3" autoplay loop></audio>
+    </body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/cookify.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Primary Meta Tags -->
+        <title>Drag Me - Play For free!</title>
+        <meta name="title" content="Drag Me - Play For free!">
+        <meta name="description" content="DragMe is a free open map game where players fight each other and enjoy. Create your custom room now!">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://metatags.io/">
+        <meta property="og:title" content="Drag Me - Play For free!">
+        <meta property="og:description" content="DragMe is a free open map game where players fight each other and enjoy. Create your custom room now!">
+        <meta property="og:image" content="assets/images/favicon.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://metatags.io/">
+        <meta property="twitter:title" content="Drag Me - Play For free!">
+        <meta property="twitter:description" content="DragMe is a free open map game where players fight each other and enjoy. Create your custom room now!">
+        <meta property="twitter:image" content="assets/images/favicon.png">
+
+        <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png"/>
+
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+    </head>
+    <body class="unselectable" oncontextmenu="return false;">
+        <div>
+            <div class="heared-div">
+                <div class="topbar">
+                    <div class="score-box">
+                        <div class="pix-heart"></div>
+                        <div class="count">
+                            <h1 class="score-l"></h1>
+                        </div>
+                    </div>
+                    <div class="player-box">
+    
+                        <div class="player-icon"></div>
+                        <div class="count">
+                            <h1 class="player-l"></h1>
+                        </div>
+    
+                    </div>
+                    <div class="kill-box">
+    
+                        <div class="kill-icon"></div>
+                        <div class="count">
+                            <h1 class="kill-l"></h1>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="topbar right-button">
+                    <div class="score-box">
+                        <div class="pix-heart quit-btn"></div>
+                        <div class="count">
+                            <h1 class="quit-l">Quit</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar settings-button">
+                    <div class="score-box">
+                        <div class="pix-hearts settings-btn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="playground">
+
+                <div class="enemy">
+
+                </div>
+                <div class="me">
+
+                </div>
+            </div>
+
+        </div>
+
+    <div class="cursor"></div>
+
+    </body>
+    <div class="heart-pop">
+        <h1 id="m-pop"></h1>
+    </div>
+
+    <div class="message-lay">
+        <div class="message-inner">
+            <h6 class="msg-txt"></h6>
+            <div class="mc-sh return-button">
+                <h1>Go back!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="player-list">
+        <div class="player-inner mc-sh">
+            <header>
+                <div>
+                    <h2>Slimes</h2>
+                </div>
+            </header>
+            <main class="player-list-root">
+                
+            </main>
+            <footer>
+                <div class="mc-sh player-quit">
+                    <h6>Close</h6>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="logs">
+    </div>
+
+    <audio id="audio-playback"></audio>
+    <audio src="assets/sounds/bgm.mp3" autoplay loop></audio>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/cookify.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/game-async.js"></script>
+
+</html>
