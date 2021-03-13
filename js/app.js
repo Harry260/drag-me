@@ -74,7 +74,7 @@ function createPlayer(player_name, room_id, create){
     var playerOBJ ={
 
             score: {
-                size:20,
+                size:50,
                 kills:0
             },
             pos: {
